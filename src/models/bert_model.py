@@ -77,3 +77,19 @@ class BERTModel:
         )
 
         return trainer.evaluate(test_dataset)
+    
+    def load(self, model_dir):
+        """
+        Load a trained model from the specified directory.
+        """
+        self.model.load_state_dict(torch.load(f"{model_dir}/pytorch_model.bin"))
+        self.model.eval()
+
+    def predict(self, text):
+        """
+        Predict the label for a given text.
+        """
+        inputs = self.tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
+        outputs = self.model(**inputs)
+        prediction = torch.argmax(outputs.logits, dim=-1).item()
+        return prediction

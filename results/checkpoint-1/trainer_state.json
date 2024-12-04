@@ -12,8 +12,8 @@
       "epoch": 1.0,
       "eval_loss": 0.4354574680328369,
       "eval_runtime": 0.002,
-      "eval_samples_per_second": 984.463,
-      "eval_steps_per_second": 492.231,
+      "eval_samples_per_second": 1001.386,
+      "eval_steps_per_second": 500.693,
       "step": 1
     }
   ],
