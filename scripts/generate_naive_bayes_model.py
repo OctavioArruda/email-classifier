@@ -4,8 +4,17 @@ from sklearn.naive_bayes import MultinomialNB
 
 # Sample training data
 train_data = {
-    "text": ["This is spam", "This is ham", "Spam messages are annoying", "Ham is delicious"],
-    "label": [1, 0, 1, 0]
+    "text": [
+        "Win a lottery now", 
+        "Buy cheap products online", 
+        "Meeting rescheduled to Monday", 
+        "Discounts on your favorite brands", 
+        "Team lunch planned for today", 
+        "Click here to claim your prize", 
+        "Let's meet tomorrow for the project discussion", 
+        "Exclusive deals just for you"
+    ],
+    "label": [1, 1, 0, 1, 0, 1, 0, 1]
 }
 
 # Initialize and train the model
