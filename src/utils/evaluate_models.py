@@ -46,6 +46,6 @@ if __name__ == "__main__":
     evaluate_model(nb_model, test_data, output_dir)
 
     # Evaluate BERT
-    bert_model = BertModel()
+    bert_model = BERTModel()
     bert_model.load("models/bert_model")
     evaluate_model(bert_model, test_data, output_dir)
