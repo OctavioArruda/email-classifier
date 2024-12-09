@@ -17,13 +17,17 @@
     {
       "epoch": 2.0,
       "eval_loss": 0.45965641736984253,
-      "eval_runtime": 0.0,
+      "eval_runtime": 0.0017,
+      "eval_samples_per_second": 1158.968,
+      "eval_steps_per_second": 579.484,
       "step": 2
     },
     {
       "epoch": 3.0,
       "eval_loss": 0.7881003618240356,
-      "eval_runtime": 0.0,
+      "eval_runtime": 0.002,
+      "eval_samples_per_second": 1006.311,
+      "eval_steps_per_second": 503.155,
       "step": 3
     }
   ],
